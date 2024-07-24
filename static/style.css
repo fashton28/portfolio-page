@@ -1,22 +1,63 @@
 body{
     background-color: black;
     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .main-header{
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: center;
    
     
 }
+
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;
+    transition: 1s;
+}
+
+a:hover{
+    color: white;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+
+}
+ul {
+   list-style-type: none;
+   padding: 0;
+   margin-right: 10px;
+
+}
+
+#header-list{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 
 .content{
     color: white;
     width: 100%;
     text-align: center;
     max-height: 800px;
-    margin-bottom: 350px;
+    margin-bottom: 100px;
     
 }
 
@@ -45,6 +86,7 @@ body{
 }
 
 .socials{
+    width:100%;
     display: grid;
     grid-template-columns: 12px 12px 12px 12px;
     gap: 60px;
