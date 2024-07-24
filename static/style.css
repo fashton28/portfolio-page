@@ -3,6 +3,8 @@ body{
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+    height: 500px;
+    color: white;
 }
 
 .main-header{
@@ -32,7 +34,7 @@ a:hover{
     
 }
 
-li {
+#header-list>li {
     display: inline;
     padding: 0 10px;
 
@@ -102,3 +104,40 @@ ul {
     
    
 }
+
+/* Projects Page CSS */
+
+#Projects {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+#Construction {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: white;
+}
+
+/* Styling the books section */
+#books {
+    color: white;
+}
+#books-list > li {
+    font-size: 20px
+}
+.books-container {
+    padding:10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#books-list > li::before {
+    content:"•";
+    color: white;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body id ="books">
+    <header>
+        <div class="main-header">
+            <img height="120px" width="120px" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul id="header-list">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('writing') }}">Writing</a></li>
+            <li><a href="{{ url_for('books') }}">Books</a></li>
+        </ul>
+    </nav>
+
+    <div class = "books-container">
+        <div id = "year">
+            <h1>2024</h1>
+            <ul id ="books-list" >
+                <li>The Lean Startup by Eric Ries</li>
+                <li>The Alchemist</li>
+                <li>Diary of a CEO</li>
+            </ul>
+        </div>
+    </div>
+    
+
+</body>
+</html>
