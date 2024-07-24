@@ -134,10 +134,34 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 450px;
 }
 #books-list > li::before {
     content:"•";
     color: white;
 }
+
+
+/* Style for writing page */
+
+#writing{
+    background-color: black;
+    color: white;
+}
+
+.essay-container {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.essay-title{
+    cursor: pointer;
+}
+
+.rotar  {
+    transform: rotate(90deg);
+}
+
+
 
 

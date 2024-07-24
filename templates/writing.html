@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body id = "writing">
+    <header>
+        <div class="main-header">
+            <img height="120px" width="120px" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul id="header-list">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('writing') }}">Writing</a></li>
+            <li><a href="{{ url_for('books') }}">Books</a></li>
+        </ul>
+    </nav>
+
+    <div class = "essay-container">
+        <div class = "essay">
+            <h1 class = "essay-title"><span class = "rotar">▶</span>Title of the Essay</h1>
+                <div>
+                    <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis commodi, iure distinctio odit consequatur ea culpa quae hic, possimus fuga reprehenderit error modi porro necessitatibus eligendi ipsum ullam accusantium?</p>
+                    <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, hic officia! Quos beatae odit molestiae tempora culpa iste illo ad corrupti quibusdam, necessitatibus tempore, soluta architecto mollitia pariatur, at inventore.</p>
+                </div>
+                
+
+        </div>
+
+
+
+
+
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const titles = document.getElementsByClassName("essay-title");
+            for (let i = 0; i < titles.length; i++) {
+                titles[i].addEventListener("click", function() {
+                    const texts = this.nextElementSibling;
+                    if (texts.style.display === "none" || texts.style.display === "") {
+                        texts.style.display = "block";
+                    } else {
+                        texts.style.display = "none";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
