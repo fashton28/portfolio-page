@@ -162,6 +162,14 @@ ul {
     transform: rotate(90deg);
 }
 
+p{
+    color: gray;
+}
+a > img {
+    transition: 500ms;
+}
 
-
+a > img:hover{
+    transform:translate(0,-4px);
+}
 
