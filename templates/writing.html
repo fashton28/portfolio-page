@@ -10,6 +10,7 @@
     <header>
         <div class="main-header">
             <img height="120px" width="120px" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+        
         </div>
     </header>
 
@@ -24,8 +25,8 @@
 
     <div class = "essay-container">
         <div class = "essay">
-            <h2 class = "essay-title"><span class = "rotar">▶</span>Title of the Essay</h2>
-                <div>
+            <h2 class = "essay-title"><span class = "rotar" style = "color:gray;">▶</span>Tech, Life and Passion</h2>
+                <div class = "essay-body" style = 'display:none;'>
                     <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis commodi, iure distinctio odit consequatur ea culpa quae hic, possimus fuga reprehenderit error modi porro necessitatibus eligendi ipsum ullam accusantium?</p>
                     <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, hic officia! Quos beatae odit molestiae tempora culpa iste illo ad corrupti quibusdam, necessitatibus tempore, soluta architecto mollitia pariatur, at inventore.</p>
                 </div>
@@ -45,10 +46,13 @@
             for (let i = 0; i < titles.length; i++) {
                 titles[i].addEventListener("click", function() {
                     const texts = this.nextElementSibling;
+                    const arrow = this.querySelector(".rotar");
                     if (texts.style.display === "none" || texts.style.display === "") {
                         texts.style.display = "block";
+                        arrow.style.transform = "rotate(90deg)";
                     } else {
                         texts.style.display = "none";
+                        arrow.style.transform = "rotate(0deg)";
                     }
                 });
             }
