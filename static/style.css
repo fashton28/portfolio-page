@@ -196,6 +196,14 @@ a > img:hover{
 
 }
 
+.essay-title{
+    display: flex;
+
+}
+
+.text-title{
+    padding-left: 10px;
+}
 
 
 

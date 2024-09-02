@@ -25,19 +25,24 @@
 
     <div class = "essay-container">
         <div class = "essay">
-            <h2 class = "essay-title"><span class = "rotar" style = "color:gray;">▶</span>Tech, Life and Passion</h2>
+            <h2 class = "essay-title"> <div id = 'rotate'><span id = "rotar" style = "color:gray;">▶</span></div><div class = "text-title">Tech, Life and Passion</div></h2>
                 <div class = "essay-body" style = 'display:none;'>
                     <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis commodi, iure distinctio odit consequatur ea culpa quae hic, possimus fuga reprehenderit error modi porro necessitatibus eligendi ipsum ullam accusantium?</p>
                     <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, hic officia! Quos beatae odit molestiae tempora culpa iste illo ad corrupti quibusdam, necessitatibus tempore, soluta architecto mollitia pariatur, at inventore.</p>
                 </div>
                 
-
         </div>
+    </div>
 
-
-
-
-
+    <div class = "essay-container">
+        <div class = "essay">
+            <h2 class = "essay-title"> <div id = 'rotate'><span id = "rotar" style = "color:gray;">▶</span></div><div class = "text-title">Tech, Life and Passion</div></h2>
+                <div class = "essay-body" style = 'display:none;'>
+                    <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis commodi, iure distinctio odit consequatur ea culpa quae hic, possimus fuga reprehenderit error modi porro necessitatibus eligendi ipsum ullam accusantium?</p>
+                    <p class = "text-essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, hic officia! Quos beatae odit molestiae tempora culpa iste illo ad corrupti quibusdam, necessitatibus tempore, soluta architecto mollitia pariatur, at inventore.</p>
+                </div>
+                
+        </div>
     </div>
     
     <script>
@@ -46,7 +51,8 @@
             for (let i = 0; i < titles.length; i++) {
                 titles[i].addEventListener("click", function() {
                     const texts = this.nextElementSibling;
-                    const arrow = this.querySelector(".rotar");
+                    // const arrow = document.getElementById("rotate");
+                    const arrow = this.querySelector("#rotate");
                     if (texts.style.display === "none" || texts.style.display === "") {
                         texts.style.display = "block";
                         arrow.style.transform = "rotate(90deg)";
