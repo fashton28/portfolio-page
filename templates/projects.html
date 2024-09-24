@@ -22,32 +22,50 @@
             <li><a href="{{ url_for('books') }}">Books</a></li>
         </ul>
     </nav>
-    <div id ="project-container">
+    
 
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{ url_for('static', filename='images/logo.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="project-container" class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/logo.png') }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of Project 1. This is a brief overview of what the project does and its key features.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Github Repository</a>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{ url_for('static', filename='images/logo.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/logo.png') }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of Project 2. Highlight the main aspects and technologies used in this project.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Github Repository</a>
+                    </div>
+                </div>
             </div>
-          </div>
 
-
-
-
-
-
-
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/logo.png') }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of Project 3. Explain the purpose and any unique features of this project.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Github Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
